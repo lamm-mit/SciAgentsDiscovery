@@ -41,6 +41,6 @@ This repository contains codes to generate novel research ideas in the realm of 
 
 The Jupyter notebook files named "approach_1.ipynb" and "approach_2.ipynb" in the main repository, correspond to the non-automated and automated multi-agent framewroks as explained in the paper, respectively. 
 
-The automated multi-agent model is implemented in Autogen(https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
+The automated multi-agent model is implemented in [Autogen](https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
 ### Requirements
 OpenAI and Semantic Scholar APIs are required to run the codes. 
