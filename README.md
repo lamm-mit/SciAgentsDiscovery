@@ -27,7 +27,7 @@ accelerates the development of advanced materials by unlocking Nature’s design
 ![Fig_overview](https://github.com/user-attachments/assets/3cae1052-427a-407c-8c9d-629111a3c070)
 
 **Overview of the multi-agent graph-reasoning system developed here**  
-**Panel a**: Overview of graph construction, as reported in [Buehler et al., 2024](#cite-key). The visual shows the progression from scientific papers as a data source to graph construction, with the image on the right showing a zoomed-in view of the graph.  
+**Panel a**: Overview of graph construction, as reported in [Buehler et al., 2024](#https://iopscience.iop.org/article/10.1088/2632-2153/ad7228/meta). The visual shows the progression from scientific papers as a data source to graph construction, with the image on the right showing a zoomed-in view of the graph.  
 **Panels b and c**: Two distinct approaches are presented. In **b**, a multi-agent system based on a pre-programmed sequence of interactions between agents ensures consistency and reliability. In **c**, a fully automated, flexible multi-agent framework adapts dynamically to the evolving research context. Both systems leverage a sampled path within a global knowledge graph as context to guide the research idea generation process. Each agent plays a specialized role:  
 - **The Ontologist** defines key concepts and relationships.  
 - **Scientist 1** crafts a detailed research proposal.  
