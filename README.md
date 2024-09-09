@@ -44,3 +44,18 @@ The Jupyter notebook files named "approach_1.ipynb" and "approach_2.ipynb" in th
 The automated multi-agent model is implemented in [Autogen](https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
 ### Requirements
 OpenAI and Semantic Scholar APIs are required to run the codes. 
+
+
+
+### Original paper
+
+Please cite this work as:
+```
+@article{GhafarollahiBuehler_sciagents_2024,
+    title   = {SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning},
+    author  = {A. Ghafarollahi, M.J. Buehler},
+    journal = {},
+    year    = {2024},
+    volume  = {},
+    pages   = {},
+    url     = {}
