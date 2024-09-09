@@ -37,9 +37,9 @@ Figure 1. **Overview of the multi-agent graph-reasoning system developed here**
 This collaborative framework enables the generation of innovative and well-rounded scientific hypotheses that extend beyond conventional human-driven methods.
 
 ### Codes
-This repository contains codes to generate novel research ideas in the realm of bio-inspired materials.   
+This repository contains code for generating novel research ideas in the field of bio-inspired materials.
 
-The Jupyter notebook files named "approach_1.ipynb" and "approach_2.ipynb" in the main repository, correspond to the non-automated and automated multi-agent framewroks as explained in the paper, respectively. 
+The Jupyter notebook files "approach_1.ipynb" and "approach_2.ipynb" in the main directory correspond to the non-automated and automated multi-agent frameworks, respectively, as explained in the accompanying paper.
 
 The automated multi-agent model is implemented in [Autogen](https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
 ### Requirements
