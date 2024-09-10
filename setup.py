@@ -16,7 +16,7 @@ setup(
         'matplotlib',
         'pandas',
         'transformers>=4.39',
-        'pyautogen>=0.2.28,
+        'pyautogen>=0.2.28',
         'powerlaw',
         'markdown2',
         'pdfkit',
