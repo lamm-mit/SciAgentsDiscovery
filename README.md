@@ -29,8 +29,23 @@ The Jupyter notebook files ```approach_1.ipynb``` and ```approach_2.ipynb``` in 
 The automated multi-agent model is implemented in [AutoGen](https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
 
 ### Requirements
-(a) OpenAI and (b) Semantic Scholar APIs are required to run the codes. 
 
+You need to install the GraphReasoning package, as describe below. Further, (a) OpenAI and (b) Semantic Scholar APIs are required to run the codes. 
+
+#### Graph Reasoning installation 
+
+Install directly from GitHub:
+```
+pip install git+https://github.com/lamm-mit/GraphReasoning
+```
+Or, editable:
+```
+pip install -e git+https://github.com/lamm-mit/GraphReasoning.git#egg=GraphReasoning
+```
+You may need wkhtmltopdf:
+```
+sudo apt-get install wkhtmltopdf
+```
 
 ### Additional background
 
