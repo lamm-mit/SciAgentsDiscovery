@@ -46,6 +46,23 @@ You may need wkhtmltopdf:
 ```
 sudo apt-get install wkhtmltopdf
 ```
+#### Graph file:
+```
+from huggingface_hub import hf_hub_download
+data_dir='./GRAPHDATA/'    
+graph_name='BioGraph.graphml'
+filename = f"{data_dir}/{graph_name}"
+file_path = hf_hub_download(repo_id=repository_id, filename=filename,  local_dir='./')
+```
+
+#### Embeddings:
+```
+from huggingface_hub import hf_hub_download
+data_dir='./GRAPHDATA/'    
+embedding_file='BioGraph_embeddings_ge-large-en-v1.5.pkl'
+filename = f"{data_dir}/{embedding_file}"
+file_path = hf_hub_download(repo_id=repository_id, filename=filename, local_dir='./')
+```
 
 ### Additional background
 
