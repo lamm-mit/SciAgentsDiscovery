@@ -148,6 +148,90 @@ def json_to_formatted_text(json_data):
     return formatted_text
 
 
+
+
+def create_path(G, embedding_tokenizer, embedding_model, node_embeddings,
+                          generate_graph_expansion=None,
+                          second_hop=False, data_dir='./', save_files=False, verbatim=False,
+                          keyword_1 = None, keyword_2 = None, 
+                          shortest_path=True, #if set to False, do NOT use shortest path but sample a random path 
+                          top_k=5, #for random walk, if shortest_path=False
+                          randomness_factor=0,
+                          num_random_waypoints=0,
+                         ):
+
+    if keyword_1==None or keyword_2==None:
+        # Randomly pick two distinct nodes
+        random_nodes = random.sample(list(G.nodes()), 2)
+        
+        if keyword_1==None:
+             keyword_1 = random_nodes[0]
+        if keyword_2==None:
+             keyword_2 = random_nodes[1]
+        
+        if verbatim:
+             print("Randomly selected nodes:", keyword_1, "and", keyword_2)
+    
+    print(">>> Selected nodes:", keyword_1, "and", keyword_2)
+    '''
+    try:
+        keyword_1=keyword_1[0]
+    except:
+        keyword_1=keyword_1
+    try:
+        keyword_2  =keyword_2[0]
+    except:
+        keyword_2  =keyword_2
+    '''
+    if shortest_path:
+        (best_node_1, best_similarity_1, best_node_2, best_similarity_2), path, path_graph, shortest_path_length, fname, graph_GraphML=find_path( G, node_embeddings,
+                                         embedding_tokenizer, embedding_model , second_hop=False, 
+                                         data_dir=data_dir, save_files=False,
+                                         keyword_1 = keyword_1, keyword_2 = keyword_2, )
+
+    else: #random path
+        print ("Random walk to get path:", keyword_1, "and", keyword_2)
+        
+        if randomness_factor>0 or num_random_waypoints>0:
+            path, path_graph, shortest_path_length, _, _= heuristic_path_with_embeddings_with_randomization_waypoints(
+                G, 
+                embedding_tokenizer, 
+                embedding_model, 
+                keyword_1, 
+                keyword_2, 
+                node_embeddings, 
+                top_k=5, 
+                #perturbation_factor=0.1, 
+                second_hop=False, 
+                data_dir=data_dir, 
+                verbatim=True, 
+                save_files=False,
+                randomness_factor=randomness_factor,
+                num_random_waypoints=num_random_waypoints,
+            )
+
+        else:
+            path, path_graph, shortest_path_length, _, _ = heuristic_path_with_embeddings(G, embedding_tokenizer, embedding_model, 
+                                                                                      keyword_1, keyword_2, 
+                                                                                      node_embeddings, top_k=top_k, 
+                                                                                      second_hop=False,data_dir=data_dir, 
+                                                                                      verbatim=verbatim,
+                                                                                      save_files=save_files)
+
+        
+        print ("Done random walk to get path")
+
+    print("Path:", path)
+
+    path_list_for_vis, path_list_for_vis_string=path_list=print_path_with_edges_as_list(G, path, keywords_separator=' -- ') 
+    print  ( path_list_for_vis_string )
+
+    return path_list_for_vis, path_list_for_vis_string
+
+
+
+
+
 def develop_qa_over_path (G, embedding_tokenizer, embedding_model,node_embeddings,
                           generate, generate_graph_expansion=None,
                           second_hop=False, data_dir='./', save_files=False, verbatim=False,
@@ -423,7 +507,7 @@ and (2) a thorough critical scientific review with strengths and weaknesses, and
     res_data['modeling_priority'] = modeling_priority
     res_data['synbio_priority'] = synbio_priority
     
-    output_pdf_path = "output_"
+    output_pdf_path = f"{data_dir}/output_"
     fname=markdown_to_pdf(complete_doc, output_pdf_path)
     
     df = pd.DataFrame([res_data])
