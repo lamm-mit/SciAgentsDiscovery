@@ -2,7 +2,7 @@
 ## Automating scientific discovery through multi-agent intelligent graph reasoning
 A. Ghafarollahi, M.J. Buehler*
 
-MIT
+Massachusetts Institute of Technology
 
 *mbuehler@MIT.EDU
 
