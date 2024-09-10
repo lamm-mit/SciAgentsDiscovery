@@ -335,9 +335,10 @@ def response_to_query(query: Annotated[str, '''the query for the paper search. T
                    }
     
     # Directly define the API key (Reminder: Securely handle API keys in production environments)
-    api_key = ''  # Replace with the actual API key
+     # Replace with the actual API key
     
     # Define headers with API key
+    api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY")
     headers = {'x-api-key': api_key}
     
     # Send the API request
