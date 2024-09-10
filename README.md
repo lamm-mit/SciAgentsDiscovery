@@ -24,7 +24,7 @@ This collaborative framework enables the generation of innovative and well-round
 ### Codes
 This repository contains code for generating novel research ideas in the field of bio-inspired materials.
 
-The Jupyter notebook files ```approach_1.ipynb``` and ```approach_2.ipynb``` in the main directory correspond to the non-automated and automated multi-agent frameworks, respectively, as explained in the accompanying paper.
+The notebook file ```SciAgents_ScienceDiscovery_GraphReasoning.ipynb.ipynb``` in the NoteBooks directory contains the codes for both non-automated and automated multi-agent frameworks as explained in the accompanying paper.
 
 The automated multi-agent model is implemented in [AutoGen](https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
 
