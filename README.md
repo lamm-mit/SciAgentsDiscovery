@@ -7,9 +7,9 @@ MIT
 *mbuehler@MIT.EDU
 
 ## Summary
-A key challenge in artificial intelligence is the creation of systems capable of autonomously advancing scientific understanding by exploring novel domains, identifying complex patterns, and uncovering previously unseen connections in vast scientific data. In this work, we present SciAgents, an approach that leverages three core concepts: (1) the use of large-scale ontological knowledge graphs to organize and interconnect diverse scientific concepts, (2) a suite of large language models (LLMs) and data retrieval tools, and (3) multi-agent systems with \textit{in-situ} learning capabilities. Applied to biologically inspired materials, SciAgents reveals hidden interdisciplinary relationships that were previously considered unrelated, achieving a scale, precision, and exploratory power that surpasses traditional human-driven research methods. The framework autonomously generates and refines research hypotheses, elucidating underlying mechanisms, design principles, and unexpected material properties. By integrating these capabilities in a modular fashion, the intelligent system yields material discoveries, critique and improve existing hypotheses, retrieve up-to-date data about existing research, and highlights their strengths and limitations. Our case studies demonstrate scalable capabilities to combine generative AI, ontological representations, and multi-agent modeling, harnessing a `swarm of intelligence' similar to biological systems. This provides new avenues for materials discovery and accelerates the development of advanced materials by unlocking Nature’s design principles. 
+A key challenge in artificial intelligence is the creation of systems capable of autonomously advancing scientific understanding by exploring novel domains, identifying complex patterns, and uncovering previously unseen connections in vast scientific data. In this work, we present SciAgents, an approach that leverages three core concepts: (1) the use of large-scale ontological knowledge graphs to organize and interconnect diverse scientific concepts, (2) a suite of large language models (LLMs) and data retrieval tools, and (3) multi-agent systems with in-situ learning capabilities. Applied to biologically inspired materials, SciAgents reveals hidden interdisciplinary relationships that were previously considered unrelated, achieving a scale, precision, and exploratory power that surpasses traditional human-driven research methods. The framework autonomously generates and refines research hypotheses, elucidating underlying mechanisms, design principles, and unexpected material properties. By integrating these capabilities in a modular fashion, the intelligent system yields material discoveries, critique and improve existing hypotheses, retrieve up-to-date data about existing research, and highlights their strengths and limitations. Our case studies demonstrate scalable capabilities to combine generative AI, ontological representations, and multi-agent modeling, harnessing a `swarm of intelligence' similar to biological systems. This provides new avenues for materials discovery and accelerates the development of advanced materials by unlocking Nature’s design principles. 
 
-![Fig_overview](https://github.com/user-attachments/assets/3cae1052-427a-407c-8c9d-629111a3c070)
+![Fig_1](https://github.com/user-attachments/assets/3cae1052-427a-407c-8c9d-629111a3c070)
 
 Figure 1. **Overview of the multi-agent graph-reasoning system developed here**  
 **Panel a**: Overview of graph construction, as reported in [Buehler et al., 2024](https://iopscience.iop.org/article/10.1088/2632-2153/ad7228/meta). The visual shows the progression from scientific papers as a data source to graph construction, with the image on the right showing a zoomed-in view of the graph.  
@@ -32,12 +32,21 @@ The automated multi-agent model is implemented in [AutoGen](https://github.com/m
 (a) OpenAI and (b) Semantic Scholar APIs are required to run the codes. 
 
 
+### Additional background
+
+![Fig_2](https://github.com/user-attachments/assets/88f6a9f3-77b5-4b9c-ad7a-73e4b0841f0b)
+
+Figure 2. Overview of the entire process from initial keyword selection to the final document, following a hierarchical expansion strategy where answers are successively refined and improved, enriched with retrieved data, critiqued and amended by identification or critical modeling, simulation and experimental tasks. The process begins with initial keyword identification or random exploration within a graph, followed by path sampling to create a subgraph of relevant concepts and relationships . This subgraph forms the basis for generating structured output in JSON, including the hypothesis, outcome, mechanisms, design principles, unexpected properties, comparison, and novelty. Each component is subsequently expanded on with individual prompting, to yield significant amount of additional detail, forming a comprehensive draft. This draft then undergoes a critical review process, including amendments for modeling and simulation priorities (e.g., molecular dynamics) and experimental priorities (e.g., synthetic biology). The final integrated draft, along with critical analyses, results in a document that guides further scientific inquiry.
+
+![Fig_3](https://github.com/user-attachments/assets/50834151-0beb-4a9c-b2fc-142d82172d4c)
+
+Figure 3. SciAgents presents a framework for generative materials informatics, showcasing the iterative process of ideation and reasoning driven by input data, questions, and context.} The cycle of ideation and reasoning leads to predictive outcomes, offering insights into new material designs and properties. The visual elements on the edges represent various data modalties such as images, documents, scientific data, DNA sequences, video content, and microscopy, illustrating the diverse sources of information feeding into this process.
 
 ### Original paper
 
 Please cite this work as:
 ```
-@misc{ghafarollahi2024sciagentsautomatingscientificdiscovery,
+@article{ghafarollahi2024sciagentsautomatingscientificdiscovery,
       title={SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning}, 
       author={Alireza Ghafarollahi and Markus J. Buehler},
       year={2024},
@@ -45,5 +54,13 @@ Please cite this work as:
       archivePrefix={arXiv},
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2409.05556}, 
+}
+
+@article{buehler2024graphreasoning,
+	author={Buehler, Markus J},
+	title={Accelerating Scientific Discovery with Generative Knowledge Extraction, Graph-Based Representation, and Multimodal Intelligent Graph Reasoning},
+	journal={Machine Learning: Science and Technology},
+	url={http://iopscience.iop.org/article/10.1088/2632-2153/ad7228},
+	year={2024},
 }
 ```
