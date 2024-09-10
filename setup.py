@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='ScienceDiscovery',
-    version='0.2.0',
+    version='0.1.0',
     author='Markus J. Buehler',
     author_email='mbuehler@mit.edu',
     packages=find_packages(),
