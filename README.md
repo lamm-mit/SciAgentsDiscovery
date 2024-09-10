@@ -18,8 +18,8 @@ This collaborative framework enables the generation of innovative and well-round
 
 ![silk_energy_results](https://github.com/user-attachments/assets/19c5e9d9-d6d1-4d9b-9a66-8bda742c7579)
 
-Figure 2: **Results from our multi-agent model, illustrating a novel research hypothesis based on a knowledge
-graph connecting the keywords “silk” and “energy-intensive”, as an example**. This visual overview shows that the
+Figure 2: Results from our multi-agent model, illustrating a novel research hypothesis based on a knowledge
+graph connecting the keywords “silk” and “energy-intensive”, as an example. This visual overview shows that the
 system produces detailed, well-organized documentation of research development with multiple pages and detailed text
 (the example shown here includes 8,100 words).
 
