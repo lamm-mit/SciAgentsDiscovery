@@ -16,6 +16,7 @@ setup(
         'matplotlib',
         'pandas',
         'transformers>=4.39',
+        'pyautogen>=0.2.28,
         'powerlaw',
         'markdown2',
         'pdfkit',
@@ -43,7 +44,7 @@ setup(
         'python-louvain',
         'wkhtmltopdf',
         'weasyprint',
-        'llama-index-embeddings-huggingface'
+        'llama-index-embeddings-huggingface',
     ],
     description='ScienceDiscovery: Use LLM-based multi-agent system to reason over graphs and generate novel research ideas.',
     long_description=long_description,
