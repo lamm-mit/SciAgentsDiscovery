@@ -59,8 +59,7 @@ file_path = hf_hub_download(repo_id='lamm-mit/bio-graph-1K', filename=filename, 
 from huggingface_hub import hf_hub_download
 embedding_name='embeddings_simple_giant_ge-large-en-v1.5.pkl'
 filename = f"{embedding_name}"
-file_path = hf_hub_download(repo_id='lamm-mit/bio-graph-1K', 
-                            filename=filename,  local_dir='./graph_giant_component')
+file_path = hf_hub_download(repo_id='lamm-mit/bio-graph-1K', filename=filename,  local_dir='./graph_giant_component')
 ```
 
 ### Additional background
