@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='GraphReasoning',
+    name='ScienceDiscovery',
     version='0.2.0',
     author='Markus J. Buehler',
     author_email='mbuehler@mit.edu',
@@ -41,12 +41,13 @@ setup(
         'community',
         'guidance',
         'python-louvain',
-        'wkhtmltopdf'
+        'wkhtmltopdf',
+        'weasyprint'
     ],
-    description='GraphReasoning: Use LLM to reason over graphs, combined with multi-agent modeling.',
+    description='ScienceDiscovery: Use LLM-based multi-agent system to reason over graphs and generate novel research ideas.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/lamm-mit/GraphReasoning',
+    url='https://github.com/lamm-mit/SciAgentsDiscovery',
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.11'
