@@ -48,20 +48,19 @@ sudo apt-get install wkhtmltopdf
 ```
 #### Graph file:
 ```
-from huggingface_hub import hf_hub_download
-data_dir='./GRAPHDATA/'    
-graph_name='BioGraph.graphml'
-filename = f"{data_dir}/{graph_name}"
-file_path = hf_hub_download(repo_id=repository_id, filename=filename,  local_dir='./')
+from huggingface_hub import hf_hub_download   
+graph_name='large_graph_simple_giant.graphml'
+filename = f"{graph_name}"
+file_path = hf_hub_download(repo_id='lamm-mit/bio-graph-1K', filename=filename,  local_dir='./graph_giant_component')
 ```
 
 #### Embeddings:
 ```
 from huggingface_hub import hf_hub_download
-data_dir='./GRAPHDATA/'    
-embedding_file='BioGraph_embeddings_ge-large-en-v1.5.pkl'
-filename = f"{data_dir}/{embedding_file}"
-file_path = hf_hub_download(repo_id=repository_id, filename=filename, local_dir='./')
+embedding_name='embeddings_simple_giant_ge-large-en-v1.5.pkl'
+filename = f"{embedding_name}"
+file_path = hf_hub_download(repo_id='lamm-mit/bio-graph-1K', 
+                            filename=filename,  local_dir='./graph_giant_component')
 ```
 
 ### Additional background
