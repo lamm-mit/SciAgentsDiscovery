@@ -77,6 +77,8 @@ Figure 4. SciAgents presents a framework for generative materials informatics, s
 
 ![image](https://github.com/user-attachments/assets/c11b7448-2c7b-43ae-89f2-f0e8ecac6849)
 
+Figure 5. Visualization of the ontological knowledge graph (left: whole graph, right: sub-graph) that organizes information. 
+
 ### Original papers
 
 Please cite this work as:
