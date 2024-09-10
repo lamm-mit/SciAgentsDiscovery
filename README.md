@@ -73,6 +73,16 @@ Figure 2. Overview of the entire process from initial keyword selection to the f
 
 Figure 3. SciAgents presents a framework for generative materials informatics, showcasing the iterative process of ideation and reasoning driven by input data, questions, and context.} The cycle of ideation and reasoning leads to predictive outcomes, offering insights into new material designs and properties. The visual elements on the edges represent various data modalties such as images, documents, scientific data, DNA sequences, video content, and microscopy, illustrating the diverse sources of information feeding into this process.
 
+<html>
+<body>
+  <h1>PDF Viewer</h1>
+  <iframe src="path_to_your_pdf.pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="path_to_your_pdf.pdf">Download PDF</a>.
+  </iframe>
+</body>
+</html>
+
+
 ### Original papers
 
 Please cite this work as:
