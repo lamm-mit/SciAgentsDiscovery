@@ -21,7 +21,7 @@ Figure 1. **Overview of the multi-agent graph-reasoning system developed here**
 - In the second approach, **The Planner** develops a detailed plan, and the **Assistant** checks the novelty of the generated research hypotheses.
 This collaborative framework enables the generation of innovative and well-rounded scientific hypotheses that extend beyond conventional human-driven methods.
 
-[silk_energy_results.pdf](https://github.com/user-attachments/files/16950119/silk_energy_results.pdf)
+![silk_energy_results](https://github.com/user-attachments/assets/19c5e9d9-d6d1-4d9b-9a66-8bda742c7579)
 
 Figure 2: **Results from our multi-agent model, illustrating a novel research hypothesis based on a knowledge
 graph connecting the keywords “silk” and “energy-intensive”, as an example**. This visual overview shows that the
