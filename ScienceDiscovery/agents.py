@@ -335,7 +335,7 @@ def response_to_query(query: Annotated[str, '''the query for the paper search. T
                    }
     
     # Directly define the API key (Reminder: Securely handle API keys in production environments)
-    api_key = 'dAqxbOYEdQ4bBLHFQQT1Z7PAxdYRiS9n45qWHMri'  # Replace with the actual API key
+    api_key = ''  # Replace with the actual API key
     
     # Define headers with API key
     headers = {'x-api-key': api_key}
