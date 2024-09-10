@@ -42,7 +42,7 @@ Figure 2. Overview of the entire process from initial keyword selection to the f
 
 Figure 3. SciAgents presents a framework for generative materials informatics, showcasing the iterative process of ideation and reasoning driven by input data, questions, and context.} The cycle of ideation and reasoning leads to predictive outcomes, offering insights into new material designs and properties. The visual elements on the edges represent various data modalties such as images, documents, scientific data, DNA sequences, video content, and microscopy, illustrating the diverse sources of information feeding into this process.
 
-### Original paper
+### Original papers
 
 Please cite this work as:
 ```
@@ -57,10 +57,10 @@ Please cite this work as:
 }
 
 @article{buehler2024graphreasoning,
-	author={Buehler, Markus J},
+	author={Markus J. Buehler},
 	title={Accelerating Scientific Discovery with Generative Knowledge Extraction, Graph-Based Representation, and Multimodal Intelligent Graph Reasoning},
 	journal={Machine Learning: Science and Technology},
-	url={http://iopscience.iop.org/article/10.1088/2632-2153/ad7228},
 	year={2024},
+	url={http://iopscience.iop.org/article/10.1088/2632-2153/ad7228},
 }
 ```
