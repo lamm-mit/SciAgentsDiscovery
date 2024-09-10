@@ -53,7 +53,8 @@ sudo apt-get install wkhtmltopdf
 
 Figure 2. Overview of the entire process from initial keyword selection to the final document, following a hierarchical expansion strategy where answers are successively refined and improved, enriched with retrieved data, critiqued and amended by identification or critical modeling, simulation and experimental tasks. The process begins with initial keyword identification or random exploration within a graph, followed by path sampling to create a subgraph of relevant concepts and relationships . This subgraph forms the basis for generating structured output in JSON, including the hypothesis, outcome, mechanisms, design principles, unexpected properties, comparison, and novelty. Each component is subsequently expanded on with individual prompting, to yield significant amount of additional detail, forming a comprehensive draft. This draft then undergoes a critical review process, including amendments for modeling and simulation priorities (e.g., molecular dynamics) and experimental priorities (e.g., synthetic biology). The final integrated draft, along with critical analyses, results in a document that guides further scientific inquiry.
 
-![Fig_3](https://github.com/user-attachments/assets/50834151-0beb-4a9c-b2fc-142d82172d4c)
+![Fig_3](https://github.com/user-attachments/assets/c356a6da-7218-42d0-b0f2-966193436f4c)
+
 
 Figure 3. SciAgents presents a framework for generative materials informatics, showcasing the iterative process of ideation and reasoning driven by input data, questions, and context.} The cycle of ideation and reasoning leads to predictive outcomes, offering insights into new material designs and properties. The visual elements on the edges represent various data modalties such as images, documents, scientific data, DNA sequences, video content, and microscopy, illustrating the diverse sources of information feeding into this process.
 
