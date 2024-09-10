@@ -43,7 +43,7 @@ setup(
         'python-louvain',
         'wkhtmltopdf',
         'weasyprint',
-        'llama-index'
+        'llama-index-embeddings-huggingface'
     ],
     description='ScienceDiscovery: Use LLM-based multi-agent system to reason over graphs and generate novel research ideas.',
     long_description=long_description,
