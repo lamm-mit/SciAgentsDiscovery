@@ -38,7 +38,6 @@ Please see: [lamm-mit/PDF2Audio](https://github.com/lamm-mit/PDF2Audio) or use t
 https://github.com/user-attachments/assets/d5a972f8-5308-4e42-b7dc-d68ba84e2140
 
 
-
 ### Requirements
 
 You need to install the GraphReasoning package, as describe below. Further, (a) OpenAI and (b) Semantic Scholar APIs are required to run the codes. 
