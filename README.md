@@ -30,6 +30,10 @@ The notebook files ```SciAgents_ScienceDiscovery_GraphReasoning_non-automated.ip
 
 The automated multi-agent model is implemented in [AutoGen](https://github.com/microsoft/autogen), an open-source ecosystem for agent-based AI modeling. 
 
+### Audio file generation (podcast style, lecture, summary and others)
+
+Please see: [lamm-mit/PDF2Audio](https://github.com/lamm-mit/PDF2Audio) or use the version at 🤗 Hugging Face Spaces [lamm-mit/PDF2Audio](https://huggingface.co/spaces/lamm-mit/PDF2Audio).
+
 ### Requirements
 
 You need to install the GraphReasoning package, as describe below. Further, (a) OpenAI and (b) Semantic Scholar APIs are required to run the codes. 
