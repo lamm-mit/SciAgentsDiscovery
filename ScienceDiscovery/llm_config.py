@@ -2,7 +2,7 @@ import autogen
 
 config_list_4o  = autogen.config_list_from_models(model_list=["gpt-4o"])
 
-config_list_4turbo = autogen.config_list_from_models(model_list=["gpt-4o"])
+config_list_4turbo = autogen.config_list_from_models(model_list=["gpt-4-turbo"])
 
 gpt4o_config = {
     "cache_seed": 42,  # change the cache_seed for different trials
