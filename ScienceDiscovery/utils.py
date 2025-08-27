@@ -94,10 +94,10 @@ def markdown_to_pdf(markdown_text, output_pdf_path):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_md_path = f"{output_pdf_path}_{timestamp}.md"
     output_pdf_path = f"{output_pdf_path}_{timestamp}.pdf"
-
+    markdown_text_utf8 = markdown_text.encode('utf-8', 'ignore').decode('utf-8')
     # Save the Markdown text to a .md file
-    with open(output_md_path, 'w') as md_file:
-        md_file.write(markdown_text)   
+    with open(output_md_path, 'w', encoding='utf-8', errors='ignore') as md_file:
+        md_file.write(markdown_text_utf8)
 
     pdfkit.from_string(full_html, output_pdf_path)
 
